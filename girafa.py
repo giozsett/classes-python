@@ -1,3 +1,6 @@
+import time
+from random import choice
+
 # O nome de uma classe sempre começa com letra maiúscula.
 class Girafa:
 
@@ -44,7 +47,20 @@ class Girafa:
 
 
     def respirar(self):
-        pass
+        print(self.nome, "inspira...")
+        # Espera 2 segundos antes de concluir.
+        time.sleep(2)
+        print(self.nome, "expira...")
     
-    def reproduzir(self):
-        pass
+
+    def reproduzir(self, parceiro):
+        if not isinstance(parceiro, Girafa):
+            print(self.nome, "sai correndo em desespero!")
+        
+        nome = "Filho de" + self.nome
+        altura = (self.altura + parceiro.altura) / 2
+        idade = "0 anos"
+        cor = choice([self, parceiro]).cor
+
+        filhote = Girafa()
+        return filhote

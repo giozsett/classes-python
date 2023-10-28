@@ -4,4 +4,7 @@ from girafa import Girafa
 girafa = Girafa("Melman", "4 metros", "28 anos", "amarela e marrom", "ilha de madagascar")
 print(girafa.nome)
 
+girafa.comer("frutas")
+
 girafa.fome()
+girafa.respirar()
