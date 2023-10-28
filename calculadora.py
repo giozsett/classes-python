@@ -24,12 +24,12 @@ class Calculadora:
 
     def somar(self):
         resultado = self.numero_um + self.numero_dois
-        print("O resultado da soma de", self.numero_um, "e", self.numero_dois, "é igual a", resultado)
+        print(self.numero_um, "mais", self.numero_dois, "é igual a", resultado)
 
 
     def multiplicar(self):
         resultado = self.numero_um * self.numero_dois
-        print("O resultado da multiplicação de", self.numero_um, "e", self.numero_dois, "é igual a", resultado)
+        print(self.numero_um, "multiplicado por", self.numero_dois, "é igual a", resultado)
 
 
     def dividir(self):
@@ -38,14 +38,15 @@ class Calculadora:
             print("Não é possível dividir um número por 0.")
         else:
             resultado = self.numero_um / self.numero_dois
-            print("O resultado da divisão de", self.numero_um, "por", self.numero_dois, "é igual a", resultado)
+            print(self.numero_um, "dividido por", self.numero_dois, "é igual a", resultado)
 
 
     def elevar(self):
-        pass
+        resultado = self.numero_um ** self.numero_dois
+        print(self.numero_um, "elevado a", self.numero_dois, "é igual a", resultado)
 
 
     def subtrair(self):
         resultado = self.numero_um - self.numero_dois
-        print( self.numero_um, "menos", self.numero_dois, "é igual a", resultado)
+        print(self.numero_um, "menos", self.numero_dois, "é igual a", resultado)
 
