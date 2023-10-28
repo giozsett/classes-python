@@ -1,10 +1,13 @@
 # Chama a classe girafa que está em outro arquivo.
 from girafa import Girafa
 
-girafa = Girafa("Melman", "4 metros", "28 anos", "amarela e marrom", "ilha de madagascar")
-print(girafa.nome)
+# Chama a classe da calculadora
+from calculadora import Calculadora
 
-girafa.comer("frutas")
+# Definindo os valores do numero_um e do numero_dois.
+numeros = Calculadora(32, 2)
 
-girafa.fome()
-girafa.respirar()
+numeros.somar()
+numeros.multiplicar()
+numeros.dividir()
+numeros.subtrair()
