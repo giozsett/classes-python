@@ -26,7 +26,8 @@ class Girafa:
         else:
             print(self.nome, "não come esse tipo de alimento.")
 
-
+# Não é possível alterar diretamente o número da fome da girafa.
+# É preciso fazê-la comer para controlar esse valor.
     def fome(self):
         if self.__fome > 60:
             print(self.nome, "está morrendo de fome!")
@@ -34,8 +35,10 @@ class Girafa:
             print(self.nome, "está com fome!")
         elif self.__fome > 20:
             print(self.nome, "não está com fome.")
-        elif self.__fome > 10
+        elif self.__fome > 0:
             print(self.nome, "está de buchin chei.")
+        elif self.__fome = 0:
+            print(self.nome, "está de buchin MUITO chei.")
 
 
     def respirar(self):
